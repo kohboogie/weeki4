@@ -1,0 +1,234 @@
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.noto-serif-kr-<uniquifier> {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+*{  box-sizing: border-box;
+    margin,padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "togalite","Noto Serif KR", serif;
+}
+h1{ 
+
+     text-align: center;
+     color: white;
+}
+h2{ margin: 100px;
+    color: black;
+    font-size: 20em;
+    font-weight: 800;
+    text-align: center;
+}
+a {
+    color: black;
+}
+
+blink {
+  animation: 0.7s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #c5c5c5 ;
+    border-bottom: 1px solid #c5c5c5 ;
+    border-left: 0px;
+    line-height: 13px;
+}
+
+.home {
+    background-color: #c5c5c5 ;
+}
+
+.shin {
+    top: calc(100% / 6);
+}
+
+.shin:hover {
+    background-color: red ;
+    color: white;
+}
+
+.brc {
+    top: calc(2 * (100% / 6));
+    border-top: 0px;
+}
+
+.brc:hover {
+    background-color: red ;
+    color: white;
+}
+
+.up {
+    top: calc(3 * (100% / 6));
+    border-top: 0px;
+}
+
+.up:hover {
+    background-color: red ;
+    color: white;
+}
+
+.under {
+    top: calc(4 * (100% / 6));
+}
+
+.under:hover {
+    background-color: red ;
+    color: white;
+}
+
+.spot {
+    top: calc(5 * (100% / 6));
+}
+
+.spot:hover {
+    background-color: red;
+    color: white;
+}
+
+.c1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.content {
+    position: fixed;
+    left: 150px;
+    top: 0;
+    width: calc(100% - 150px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    padding-top: 10px;
+    padding-left: 20px;
+    overflow: auto;
+}
+
+p { font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+    width: 100%;
+    word-break: keep-all;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0; 
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: relative;
+    z-index: 1;
+    border-width: 30px 26px 0 26px; 
+    border-color: white transparent transparent transparent;
+}
+
+.triangle.left {
+    transform: rotate(90deg); 
+    margin-right: 100px; 
+}
+
+.triangle.right {
+    transform: rotate(-90deg); 
+    margin-left: 100px; /* Adjust spacing */
+}
+
+@media screen and (max-width: 700px) {
+     body {
+        font-size: 9pt;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .home, .shin, .brc, .up, .under,.spot {
+        width: 200px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        width: calc(100% - 100px);
+        left: 200px;
+    }
+}

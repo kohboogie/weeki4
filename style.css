@@ -1,0 +1,116 @@
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.noto-serif-kr-<uniquifier> {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+/*font*/
+*{
+	margin,padding: 0;
+}
+body{
+	background: url() no-repeat;
+	background-size: cover;
+
+}
+div{
+	display: flex;
+	justify-content: center;
+}
+h1{
+    text-align: center;
+    font-family:"Noto Serif KR", serif; 
+    font-weight: 700;
+    color: white;
+    font-size: 70px;
+}
+.ticket{
+    top: 40vw;
+    width: 40vw;
+}
+.h1 figure img {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.h1 figure:hover img {
+    margin-left: -20px;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+.tra{
+    
+    height: 80vw;
+   background: url(tra.gif) no-repeat;
+    background-size: cover;
+
+}
+.img{
+	width: 70vw;
+}
+  
+.img:hover{
+	content: url(red.svg);
+}
+.text-row {
+    font-size: 55px;
+    justify-content: center;
+    color: #FF0000;
+    width: 100%;
+    max-width: 100%; 
+    position: relative;
+    padding-bottom: 90px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'togalite';
+    font-weight: 800;
+}
+
+.text-row .loop {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 30s linear infinite;
+}
+@keyframes marquee{
+0% {
+    transform: translateX(0);}
+100% {
+    transform: translateX(-50%);}
+}

@@ -1,0 +1,309 @@
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.noto-serif-kr-<uniquifier> {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+*{  box-sizing: border-box;
+    margin,padding: 0;
+}
+body {font-family: "togalite","Noto Serif KR", serif;
+}
+h1{}
+p { 
+
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+    width: 100%;
+    word-break: keep-all;
+}
+a { font-size: 1.4em;
+    color: black;
+    display: inline;
+    line-height: 18pt;
+}
+b{  line-height: 18pt;
+
+	font-size: 1.2em;
+
+	
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #c5c5c5 ;
+    border-bottom: 1px solid #c5c5c5 ;
+    border-left: 0px;
+    line-height: 13px;
+}
+
+.home {
+    background-color: #c5c5c5 ;
+}
+
+.shin {
+    top: calc(100% / 6);
+}
+
+.shin:hover {
+    background-color: red ;
+    color: white;
+}
+
+.brc {
+    top: calc(2 * (100% / 6));
+    border-top: 0px; 
+    
+}
+
+.brc:hover {
+    background-color: red ;
+    color: white;
+}
+
+.up {
+    top: calc(3 * (100% / 6));
+    border-top: 0px;
+}
+
+.up:hover {
+    background-color: red ;
+    color: white;
+}
+
+.under {
+    top: calc(4 * (100% / 6));
+}
+
+.under:hover {
+    background-color: red ;
+    color: white;
+}
+
+.spot {
+	background-color: red;
+    color: white;
+    top: calc(5 * (100% / 6));
+}
+
+.spot:hover {
+    background-color: red;
+    color: white;
+}
+
+.c1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.content {
+    background-color:red;
+    position: fixed;
+    left: 150px;
+    top: 0;
+    width: calc(100% - 150px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    overflow: auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin-left: 30px;
+    position: fixed;
+}
+
+
+table {
+
+    width: 100%;
+    margin-left: -3px;
+    margin-right: 3px;
+}
+
+td {
+font-weight: 500;
+ font-size: 1.5em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  vertical-align: top;
+  border-bottom: 1px solid #c5c5c5;
+  line-height: 1.6;
+}
+t1 {
+font-weight: 500;
+ font-size: 1.5em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  vertical-align: top;
+  border-bottom: 1px solid #c5c5c5;
+  line-height: 1.7;
+}
+tr:hover {
+    background-color: #c5c5c5;
+}
+
+.firstrow:hover {
+    background-color: gainsboro;
+}
+
+thead {
+    border-bottom: 1px solid #c5c5c5;
+    cursor: pointer;
+}
+
+
+.column {
+width: 80%;
+float: left;
+}
+
+.table {
+  width: 100%;
+  color: black;
+  word-break: keep-all;
+}
+
+.table th,
+.table td {
+  vertical-align: center;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0rem;
+}
+
+.table-bordered {
+    border-collapse: collapse;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 0px;
+}
+
+.table-grid {
+    width:80%;
+    margin:0 auto;
+}
+
+.dataTables_filter {
+     display: none;
+}
+
+.dataTables_info {
+     display: none;
+}
+
+.zoom {
+  padding: 0px;
+  transition: transform 0s;
+  height: 30px;
+  margin: 0 auto;
+  transform-origin: left top;
+}
+
+.category {
+    width: 12%;
+}
+
+.gridimg {
+    width:75%;
+    padding: 10px;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
+.hidden{display:none;visibility:hidden}
+
+.thumbnail {
+    visibility: hidden;
+}
+
+
+
+@media screen and (max-width: 704px) {
+     body {
+        font-size: 9pt;
+    }
+    
+    .nav {
+        width: 100px;
+    }
+
+    .content {
+        width: calc(100% - 100px);
+        left: 100px;
+    }
+
+    .category, .author, .publisher {
+        display: none;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+@font-face {
+font-family: "togalite", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.noto-serif-kr-<uniquifier> {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+*{  box-sizing: border-box;
+    margin,padding: 0;
+}
+
+body {
+    display: block;
+    margin: 0;
+    background-color: white;
+    font-family: "togalite","Noto Serif KR", serif;
+}
+h1{ margin: 0;
+    font-family:"togalite";
+    width: 600px;
+    font-size: 8em;
+     color: red;
+}
+
+h2{ 
+    font-family: "Noto Serif KR";
+    font-size: 1.3em;
+    margin: 100px;
+    color: black;
+    font-weight: 500;
+    line-height: 1.6;
+}
+a { line-height: 18pt;
+    color: black;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #c5c5c5 ;
+    border-bottom: 1px solid #c5c5c5 ;
+    border-left: 0px;
+    line-height: 13px;
+}
+
+.home {
+    background-color: #c5c5c5 ;
+}
+
+.shin {
+    top: calc(100% / 6);
+    background-color: red;
+    color: white;
+}
+
+.shin:hover {
+    background-color: red ;
+    color: white;
+}
+
+.brc {
+    top: calc(2 * (100% / 6));
+    border-top: 0px;
+}
+
+.brc:hover {
+    background-color: red ;
+    color: white;
+}
+
+.up {
+    top: calc(3 * (100% / 6));
+    border-top: 0px;
+}
+
+.up:hover {
+    background-color: red ;
+    color: white;
+}
+
+.under {
+    top: calc(4 * (100% / 6));
+}
+
+.under:hover {
+    background-color: red ;
+    color: white;
+}
+
+.spot {
+    top: calc(5 * (100% / 6));
+}
+
+.spot:hover {
+    background-color: red;
+    color: white;
+}
+
+.c1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.content {
+    background-color: #c5c5c5;
+    position: fixed;
+    left: 150px;
+    top: 0;
+    width: calc(100% - 150px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    ;
+
+    overflow: auto;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-title {
+    position: absolute;
+    top: 5%; 
+    left: 20px; 
+    margin: 0;
+    padding: 10px;
+    color: red;
+    z-index: 1;
+}
+
+.image-title2 {
+    position: absolute;
+    top: 80%; 
+    left: 20px; 
+    margin: 0;
+    font-size: 5em;
+    padding: 10px;
+    color: white;
+    z-index: 1;
+}
+.red{
+    background-color: red;
+}
+.des {
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 44%;
+    max-height: 300px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: black; 
+    font-size: 1.2em; 
+    z-index: 1;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+p { font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+    width: 100%;
+    word-break: keep-all;
+}
+@media screen and (max-width: 700px) {
+     body {
+        font-size: 9pt;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .home, .shin, .brc, .up, .under,.spot {
+        width: 200px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        width: calc(100% - 100px);
+        left: 200px;
+    }
+}
